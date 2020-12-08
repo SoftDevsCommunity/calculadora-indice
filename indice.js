@@ -39,7 +39,7 @@ function onSubmit2(){
         valor += +document.getElementById("Input"+i).value * +document.getElementById("Select"+i).value;
     }
     document.getElementById("Form2").innerHTML = ""
-    document.getElementById("mostrarPromedio").innerText = "Tu promedio es: " + (valor/creditos);
+    document.getElementById("mostrarPromedio").innerText = "Tu promedio es: " + (valor/creditos).toFixed(1);
     document.getElementById("BtnReiniciar").style = "display: block;";
     document.getElementById("BtnReiniciar").addEventListener("click", function () {
         document.getElementById("BtnReiniciar").style = "display: none;";
