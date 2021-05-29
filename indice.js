@@ -47,7 +47,7 @@ function validateFiels() {
         if(data == "" || data.length < 0) {
             return false;
         }
-        else if (data <= 0){
+        else if (data < 0){
             return false;
         }  
     };
